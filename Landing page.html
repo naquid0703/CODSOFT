@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    
+    <style>
+        body {
+            background-color: yellowgreen;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+            background-color: red;
+            padding: 15px;
+            margin: 0;
+            font-size: 24px;
+        }
+        #container {
+            display: flex;
+            justify-content: space-between; /* Evenly distribute across the screen */
+            align-items: center;
+            padding: 20px;
+            flex-wrap: wrap;
+            width: 90%;
+            margin: auto;
+        }
+        .book {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 30%; /* Adjust width so they fill the screen */
+            text-align: center;
+        }
+        .book img {
+            width: 100%;
+            height: 600px;
+            max-height: 400px;
+            border: 3px solid black;
+            border-radius: 10px;
+        }
+        .book p {
+            margin-top: 10px;
+            font-size: 16px;
+            color: black;
+            font-weight: bold;
+        }
+        h3 {
+            text-align: center;
+            font-size: 20px;
+            margin-top: 30px;
+        }
+        /* Fixes the alignment of the quotes section */
+        #books-container {
+            display: flex;
+            justify-content: center; /* Center the quotes horizontally */
+            gap: 20px; /* Add spacing between quotes */
+            flex-wrap: wrap;
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+        .quotes {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 30%; /* Each quote takes 30% of the container */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Our Landing Page</h1>
+
+    <div id="container">
+        <div class="book">
+            <img src="https://m.media-amazon.com/images/I/81AooWB9diL._SL1500_.jpg" alt="Oliver Twist">
+            <p>A classic novel by Charles Dickens about an orphan's journey through hardships and survival.</p>
+        </div>
+        <div class="book">
+            <img src="https://cdn.penguin.co.uk/dam-assets/books/9780141915036/9780141915036-jacket-large.jpg" alt="Grapes of Wrath">
+            <p>John Steinbeck’s novel that portrays the struggles of a poor family during the Great Depression.</p>
+        </div>
+        <div class="book">
+            <img src="https://cdn2.penguin.com.au/covers/original/9780143566496.jpg" alt="1984">
+            <p>George Orwell’s dystopian masterpiece that explores surveillance, government control, and freedom.</p>
+        </div>
+    </div>
+
+    <div>
+        <h3>Best Quotes from the Novels</h3>
+        <div id="books-container">
+            <div class="quotes">
+                <p>"There are books of which the backs and covers are by far the best parts."</p>
+                <p>"Some people are nobody's enemies but their own."</p>
+            </div>
+            <div class="quotes">
+                <p>"Muscles aching to work, minds aching to create—this is man."</p>
+                <p>"In the souls of the people the grapes of wrath are filling and growing heavy, growing heavy for the vintage."</p>
+                
+            </div>
+            <div class="quotes">
+                <p>"Big Brother is watching you."</p>
+                <p>"In the face of pain, there are no heroes."</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
